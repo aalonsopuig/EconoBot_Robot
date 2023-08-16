@@ -1,0 +1,54 @@
+Para robot_parar
+escribepuerto 888 0
+espera 100
+Fin
+
+Para robot_adelante
+escribepuerto 888 0
+pausar
+escribepuerto 888 9
+pausar
+Fin
+
+Para robot_atras
+escribepuerto 888 0
+espera 10
+escribepuerto 888 6
+espera 5
+Fin
+
+Para robot_derecha
+escribepuerto 888 0
+espera 10
+escribepuerto 888 5
+espera 200
+Fin
+
+Para robot_izquierda
+escribepuerto 888 0
+espera 10
+escribepuerto 888 10
+espera 200
+Fin
+
+Para robot_bumpers
+Haz "bumpers leepuerto 889
+Si :bumpers=104 [robot_parar robot_atras robot_izquierda robot_parar]
+Si :bumpers=88  [robot_parar robot_atras robot_derecha robot_parar]
+Si :bumpers=120 [robot_parar robot_atras robot_derecha robot_parar]
+Fin
+
+Para pausar
+repite 5 [Haz "loquesea 20]
+Fin
+
+Para inicio
+repite 5000 [robot_adelante robot_bumpers]
+robot_parar
+Fin
+
+inicio
+
+
+
+
