@@ -1,0 +1,17 @@
+Drivers
+
+El paso siguiente es encontrar los componentes necesarios para la electronica de potencia y control del robot. 
+
+Electrónica de Potencia. Los motores utilizados consumen un mínimo de 60mA y un máximo de 300mA segun sus hojas de especificaciones. Para poder entregar a dichos motores tal corriente, manteniendo el control, necesitamos un driver. 
+
+Nos hemos dedicado a caracterizar los diferentes componentes que tienen aspecto de ser drivers, tomando nota de sus números de referencia y buscando sus datasheets en páginas especializadas, como http://www.datasheetarchive.com o 
+http://www.alldatasheet.com
+
+Tras una búsqueda entre los componentes de todas las placas electrónicas encontramos los siguientes drivers:
+
+BA6209 Driver dual. Alimentación: 6 a 18v. Corriente max: 1.6A
+LB1641 Driver dual. Alimentación: 5 a 18v. Corriente max: 1.6A
+TC4424 (2) Driver dual. alimentación: 5 a 22v. Corriente max: 3A
+BA5983FM	BTL DRIVE
+
+Utilizaremos el TC4424

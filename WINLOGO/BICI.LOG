@@ -1,0 +1,332 @@
+Para asiento
+Repite 2 [medio.asiento balancea 180]
+Fin
+
+Para bastidor
+cuadro
+ubicar.horquilla.inferior
+horquilla.inferior
+ubicar.horquilla.trasera
+horquilla.trasera
+Fin
+
+Para bicicleta :alfa :beta
+bastidor
+ubicar.asiento
+asiento
+ubicar.rueda.trasera
+rueda
+ubicar.transmisión
+transmisión
+ubicar.pedales
+pedales :beta
+ubicar.dirección :alfa
+dirección
+ubicar.rueda.delantera
+rueda
+Fin
+
+Para brazo.delantero
+Anda 53.5 Vira 27
+Anda 27 Anda -27
+Vira -27 Anda -53.7
+Fin
+
+Para brazo.inferior
+Vira -45 Anda 14
+Vira -45 Anda 82
+Anda -82 Vira 45
+Anda -14 Vira 45
+Fin
+
+Para brazo.trasero
+Repite 6 [anda 2.3 vira -15]
+Anda 78.5 Anda -78.5
+Repite 6 [vira 15 anda -2.3]
+Fin
+
+Para cadena
+semicurva.mayor
+Anda 113.3
+curva.menor
+Anda 113.3
+semicurva.mayor
+Fin
+
+Para cuadro
+Vira 27
+Anda 107 Vira -117
+Anda 121.7 Vira -75
+Anda 18.2 Vira -60
+Anda 110 Vira -135
+Fin
+
+Para curva.menor
+Vira 11
+Repite 8 [anda 2.75 vira 20]
+Vira -9
+Fin
+
+Para desandar.manivela
+Anda -5
+Vira 90 Anda -40 Vira -90
+Anda -16
+Fin
+
+Para desandar.manubrio :inclinación
+Cabecea 180
+Anda 15
+Cabecea :inclinación
+Repite 7 [vira 8 anda 2]
+Anda 28
+Fin
+
+Para dirección
+manubrio
+ubicar.horquilla.delantera
+horquilla.delantera
+Fin
+
+Para estria :longitud
+Cabecea -90
+Anda :longitud
+Anda ( -:longitud )
+Cabecea 90
+SL Anda 2 Vira -60 BL
+Fin
+
+Para horquilla.delantera
+Anda 6
+Vira -90 Anda 8 Vira 90
+Balancea 90
+brazo.delantero
+Balancea -90
+Vira -90 Anda -16 Vira 90
+Balancea 90
+brazo.delantero
+Balancea -90
+Vira -90 Anda 8 Vira 90
+Anda -6
+Fin
+
+Para horquilla.inferior
+Anda 23.1 Vira 90
+Repite 2 [brazo.inferior cabecea 180]
+Vira -90 Anda -23.1
+Fin
+
+Para horquilla.trasera
+Anda 30 Vira 90
+Repite 2 [brazo.trasero cabecea 180]
+Vira -90 Anda -30
+Fin
+
+Para llanta
+Cabecea 90 Vira -30
+neum tico
+Vira 30 Cabecea -90
+Anda 12 Vira 10
+Fin
+
+Para manivela
+Anda 16
+Vira 90 Anda 40 Vira -90
+Anda 5
+Fin
+
+Para manubrio
+Anda 34
+Cabecea 75 Vira -90
+medio.manubrio 20
+desandar.manubrio -20
+medio.manubrio -20
+desandar.manubrio 20
+Vira 90 cabecea -75
+Anda -34
+Fin
+
+Para medio.asiento
+Anda 15 Vira -90
+Anda 18 Repite 14 [anda 1 vira -10]
+Anda 12 Repite 3 [vira 10 anda 2]
+Anda 22 Vira -25
+Anda 4 Vira -135
+Anda 31
+Fin
+
+Para medio.manubrio :inclinación
+Anda 28
+Repite 7 [anda 2 vira 8]
+Cabecea :inclinación
+Anda 15
+Fin
+
+Para neum tico
+estria 12
+estria 12.2
+estria 12.5
+estria 12.7
+estria 12.5
+estria 12.2
+Fin
+
+Para pedal :beta
+manivela
+Balancea ( -:beta )
+pie
+Balancea :beta
+desandar.manivela
+Fin
+
+Para pedales :beta
+Vira 90
+Balancea ( -:beta )
+pedal ( -:beta )
+Vira 180
+pedal :beta
+Balancea ( -:beta )
+Vira 90
+Fin
+
+Para pie
+Repite 2 [semipie balancea 180]
+Fin
+
+Para piñón.mayor
+Vira 10
+Repite 18 [anda 9 vira 20]
+Vira -10
+Fin
+
+Para piñón.menor
+Vira 10
+Repite 18 [anda 2.75 vira 20]
+Vira -10
+Fin
+
+Para rayo :cruce :comba
+Vira ( 85 + :cruce )
+Cabecea :comba
+Anda 65 Anda -65
+Cabecea ( -:comba )
+Vira ( -85 - ( :cruce ) )
+Fin
+
+Para rueda
+Vira 5
+Repite 9 [llanta rayo 5 7 llanta rayo 5 -7 llanta rayo -5 7 llanta rayo -5 -7]
+Vira -5
+Fin
+
+Para semicurva.mayor
+Vira 10
+Repite 5 [anda 9 vira 20]
+Vira -11
+Fin
+
+Para semipie
+Repite 2 [anda 14 vira -90 anda 6 vira -90]
+Fin
+
+Para transmisión
+piñón.mayor
+ubicar.piñón.menor
+piñón.menor
+ubicar.cadena
+cadena
+Fin
+
+Para ubicar.asiento
+Cabecea -118.1
+Anda 15
+Cabecea 63
+Fin
+
+Para ubicar.cadena
+SL
+Vira -90 Anda 133 Vira 90
+BL
+Fin
+
+Para ubicar.dirección :alfa
+SL
+Cabecea -45
+Anda 110
+Vira 180
+Cabecea -120
+Anda 18.2
+Balancea :alfa
+BL
+Fin
+
+Para ubicar.horquilla.delantera
+Vira 180
+Anda 18.2
+Fin
+
+Para ubicar.horquilla.inferior
+Balancea 90
+Cabecea 90
+Fin
+
+Para ubicar.horquilla.trasera
+sl
+Cabecea -63
+Anda 107
+Cabecea 118.1
+bl
+Fin
+
+Para ubicar.pedales
+SL
+Cabecea 90
+Anda 10
+Vira -90
+Anda -25.9
+BL
+Fin
+
+Para ubicar.piñón.menor
+SL
+Vira 90 Anda 133 Vira -90
+BL
+Fin
+
+Para ubicar.rueda.delantera
+SL
+Anda 59.7
+Cabecea -27
+Anda 27
+Cabecea -48
+Anda 68.8
+Balancea 90
+Vira 90
+BL
+Fin
+
+Para ubicar.rueda.trasera
+SL
+Cabecea -63
+Anda -15
+Cabecea 118.1
+Anda 116.1
+Balancea -90
+Vira -55.1
+Anda -68.8
+Vira -90
+BL
+Fin
+
+Para ubicar.transmisión
+SL
+Vira -90
+Anda 72.1
+Cabecea -90
+Anda 10
+Cabecea 90
+Vira 90
+BL
+Fin
+
+balancea -30 cabecea 10
+bicicleta 15 20

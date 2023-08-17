@@ -1,0 +1,31 @@
+ 1 - negro			- Inutilizado. Usado para masa de alimentador
+ 2 - negro raya blanca		- D0 - Mia - inA amarillo
+ 3 - marron			- D1 - Mib - inB marron
+ 4 - marron raya blanca		- D2 - Mda - inA naranja
+ 5 - rojo			- D3 - Mdb - inB blanco
+ 6 - rojo raya blanca		- Inutilizado. Usado para positivo de alimentador
+ 7 - naranja
+ 8 - naranja raya blanca
+ 9 - amarillo
+10 - verde
+11 - verde
+12 - verde raya blanca		- S5 - Bd
+13 - azul			- S4 - Bi
+14 - azul raya blanca
+15 - morado
+16 - gris
+17 - blanco
+18 - rosa			- Masa
+19 - morado raya blanca		- Masa
+20 - rojo raya negra		- Masa
+21 - naranja raya negra		- Masa
+22 - amarillo raya negra	- Masa
+23 - verde raya negra		- Masa
+24 - gris raya negra		- Masa
+25 - rosa raya negra		- Masa
+carcasa: rosa raya roja		- Masa
+
+
+webs:
+http://www.angelfire.com/pa2/jcgr/tecnica/PP/pp.htm
+Programa para verificar estado puerto en disco duro

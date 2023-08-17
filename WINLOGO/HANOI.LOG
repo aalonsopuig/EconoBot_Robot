@@ -1,0 +1,102 @@
+Para añadir :varilla
+movera :varilla
+Av 10 BL
+undisco :trab
+PonY -50
+Haz :varilla Frase :trab :dis
+Fin
+
+Para discos :pequeño :grande
+Si :pequeño > :grande [pony -50 alto]
+Av 10 BL
+undisco :grande
+discos :pequeño :grande - 1
+Fin
+
+Para eliminar :varilla
+movera :varilla
+Haz "trab Primero :dis
+BL Goma
+undisco :trab
+PonY -50
+Haz :varilla MP :dis
+Fin
+
+Para hanoi :num :inici :inter :meta
+Si :num = 0 [alto]
+hanoi :num - 1 :inici :meta :inter
+mover.uno :inici :meta
+hanoi :num - 1 :inter :inici :meta
+Fin
+
+Para inicio :n
+Si :n > 15 :n < 1 [bt es [Entre un número de discos entre 1 y 15]]
+BP BT PonGrosor 1
+Haz "num :n
+Si :num > 7 [haz "fact 2] [haz "fact 4]
+;AspectoVentana "GRAFICOS [635 415]
+BP OT
+3varillas
+discos 1 :num
+espera "100
+Haz "cuenta 0
+Haz "s2 []
+Haz "s3 []
+Haz "s1 secuencia :num
+hanoi :num "s1 "s2 "s3
+( Es [Número de movimientos:] :cuenta )
+Fin
+
+Para mover.uno :desde :hacia
+Haz "cuenta :cuenta + 1
+eliminar :desde
+añadir :hacia
+Fin
+
+Para movera :varilla
+SL
+PonX ( MP :varilla ) * 80 - 160
+Haz "dis Valor :varilla
+PonY 10 * ( Cuenta :dis ) - 50
+Fin
+
+Para plataforma :pos
+GD 90 PonX CoorX - 30
+Repite 2 [av 60 gd 90 av 10 gd 90]
+SL PonPos Frase CoorX + 5 CoorY - 5
+BL Rellena SL PonPos :pos PonRumbo 0
+Fin
+
+Para secuencia :n
+Si :n = 1 [devuelve [1]]
+Devuelve Frase secuencia :n - 1 :n
+Fin
+
+Para undisco :tamaño
+Si Primero Lápiz = "BAJALAPIZ [PonCL :tamaño]
+Haz "tamaño :tamaño * :fact
+PonGrosor 8 GI 90 Av :tamaño Re :tamaño * 2 Av :tamaño GD 90 PonGrosor 1
+Si Primero Lápiz = "GOMA [poncl 1 bl av 4 re 8 av 4]
+SL
+Fin
+
+Para varilla
+BL Av 160 Re 160
+plataforma Pos
+Fin
+
+Para 3varillas
+PonCL 1 SL
+PonY -50 varilla
+PonX 80 varilla
+PonX -80 varilla
+;PonTipo "TIMES PonTamañoTipo [1 1]
+GD 90 SL PonPos [-115 120] BL Rotula [Torres de Hanoi]
+PonTamañoTipo [0.5 0.5]
+SL PonPos [-100 -80] BL Rotula "Inicio
+SL PonPos [-20 -80] BL Rotula "Inter
+SL PonPos [60 -80] BL Rotula "Meta
+GI 90 SL PonPos [-80 -50]
+Fin
+
+inicio 7
