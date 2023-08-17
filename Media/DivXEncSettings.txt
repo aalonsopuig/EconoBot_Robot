@@ -1,0 +1,43 @@
+bicubic_B 0.000000
+bicubic_C 0.500000
+bitrate 300000
+complexity modulation 0.000000
+crop bottom 0
+crop left 0
+crop right 0
+crop top 0
+data partitioning 0
+deinterlace 0
+enable crop 0
+enable resize 0
+input clock 10000000
+input frame period -400000
+interlace mode 0
+internal timescale 0
+key frame threshold 50
+log file read (null)
+log file write (null)
+max key interval 300
+mv file (null)
+psychovisual 0
+pv strength frame 0.200000
+quality 5
+quantizer 4.000000
+quarter pel 0
+resize height 480
+resize mode 0
+resize width 640
+spatial level 0.000000
+spatial passes 0
+temporal enable 0
+temporal level 0.300000
+use bidirect 0
+use gmc 0
+vbr mode 0
+vbv bitrate 3650400
+vbv occupancy 786432
+vbv size 1048576
+temporal enable 0
+temporal level 858993459
+spatial passes 0
+spatial level 0
