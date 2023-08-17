@@ -28,12 +28,14 @@ Las reglas del juego eran estas:
 3) Tendré que usar mis conocimientos de robótica y mi creatividad para buscarme la vida y construir el robot.
 4) EconoBOT será muy básico, pudiendo desplazarse por una mesa, detectar y esquivar obstáculos.
 
-Fui publicando en mi blog semana tras semana los pasos para llegar al objetivo. Fue entonces un proyecto que atrajo mucho la atención de los aficionados. Por desgracia gran parte del material de ese blog se perdió por un problema informático, pero al menos se pudo rescatar en este repositorio el suficiente para ver los resultados del proyecto, el material utilizado y el programa realizado en lenguaje LOGO utilizando el intérprete WINLOGO. También pueden verse <a href="Media">fotos y vídeos</a> que muestran su funcionamiento.<br>
+Fui publicando en mi blog semana tras semana los pasos para llegar al objetivo. Fue entonces un proyecto que atrajo mucho la atención de los aficionados. Por desgracia gran parte del material de ese blog se perdió por un problema informático, pero al menos se pudo rescatar en este repositorio el suficiente para ver los resultados del proyecto, el material utilizado y el programa realizado en lenguaje LOGO utilizando el intérprete WINLOGO. También pueden verse fotos y vídeos que muestran su funcionamiento.<br>
 
+<ul>
+  <li><p align="justify"><a href="Media">Fotos</a></li>
+  <li><p align="justify"><a href="https://www.youtube.com/watch?v=UrWAUnZggZ0&list=PLFDYLziKLKUKnwttYQYOQUEW7T8HwCY5L">Vídeo</a></li>
+</ul>
 
 El objetivo se cumplió y aquí queda su legado.</p>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/UrWAUnZggZ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <p align="center"><img border="0" src="Media\DSC02345.JPG" width="436" ></p>
 <p align="center"><img border="0" src="Media\DSC02346.JPG" width="436" ></p>
